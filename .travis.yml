@@ -1,6 +1,4 @@
 language: java
-before_script:
-  - chmod +x grailsw
 
-script: ./grailsw refresh-dependencies
-  && ./grailsw "test-app -integration"
+before_install:
+  – chmod +x gradlew
