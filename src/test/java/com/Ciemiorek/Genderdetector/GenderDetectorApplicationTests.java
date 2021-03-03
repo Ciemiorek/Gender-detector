@@ -126,7 +126,7 @@ class GenderDetectorApplicationTests {
                 .andDo(MvcResult::getAsyncResult)
 
                 .andExpect(status().isOk())
-                .andExpect(content().string(("kuba\r\ndawid\r\nrobert\r\nignacy\r\nkrzysztof\nagata\r\nalicja\r\nmaria\r\nanna\r\nkasia")));
+                .andExpect(content().bytes(("kuba\r\ndawid\r\nrobert\r\nignacy\r\nkrzysztof\nagata\r\nalicja\r\nmaria\r\nanna\r\nkasia").getBytes()));
 
 
     }
