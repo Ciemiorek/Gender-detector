@@ -17,8 +17,8 @@ import java.util.List;
 
 @Service
 public class GenderDetectorService {
-    File maleTokens = FileUtils.getFile("src\\main\\resources", "MaleTokens.txt");
-    File femaleTokens = FileUtils.getFile("src\\main\\resources", "FemaleTokens.txt");
+    File maleTokens = FileUtils.getFile("src/main/resources", "MaleTokens.txt");
+    File femaleTokens = FileUtils.getFile("src/main/resources", "FemaleTokens.txt");
 
     public ResponseEntity<ResponseDictionary> checkGender(String fullName, TypeOfChecking firstOrAll) {
     if (firstOrAll.equals(TypeOfChecking.ALL)){return checkGenderByAllTokens(fullName);
