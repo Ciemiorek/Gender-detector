@@ -1,6 +1,3 @@
 language: java
-sudo: true
-dist: trusty
-
-before_install:
-  - chmod +x mvnw
+JDK:
+  - openjdk11
